@@ -18,4 +18,9 @@
 </script>
 
 <h1>{@html post.title.rendered}</h1>
+
+{#if post.image}
+	<img src={post.image} alt={post.title.rendered} />
+{/if}
+
 <p>{@html post.content.rendered}</p>

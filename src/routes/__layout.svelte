@@ -8,7 +8,7 @@
 		width: 60vw;
 	}
 
-	:global(.more-link) {
-		display: none;
+	:global(img) {
+		max-width: 100%;
 	}
 </style>
