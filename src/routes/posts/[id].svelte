@@ -17,10 +17,31 @@
 	export let post;
 </script>
 
-<h1>{@html post.title.rendered}</h1>
+<div class="post-container">
+	<h2>{@html post.title.rendered}</h2>
 
-{#if post.image}
-	<img src={post.image} alt={post.title.rendered} />
-{/if}
+	{#if post.image}
+		<img src={post.image} alt={post.title.rendered} />
+	{/if}
 
-<p>{@html post.content.rendered}</p>
+	<p>{@html post.content.rendered}</p>
+</div>
+
+<style>
+	.post-container {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 0;
+		margin: 1rem auto;
+	}
+
+	h2 {
+		text-align: center;
+		margin: 0 0 1rem;
+	}
+	img {
+		width: 300px;
+		padding: 1rem 0;
+		margin: 0 auto;
+	}
+</style>
