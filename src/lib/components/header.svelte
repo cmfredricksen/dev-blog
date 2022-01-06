@@ -1,6 +1,6 @@
 <script>
 	import Nav from '$lib/components/nav.svelte';
-	import '../../../static/global.css';
+	import '$lib/css/global.css';
 </script>
 
 <header>
@@ -14,6 +14,7 @@
 		justify-content: space-between;
 		align-items: baseline;
 		padding: 1rem 2rem;
+		margin-bottom: 3rem;
 		border-bottom: 3px solid var(--purple);
 	}
 </style>
