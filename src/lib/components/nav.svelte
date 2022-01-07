@@ -1,3 +1,7 @@
+<script>
+	import '$lib/css/global.css';
+</script>
+
 <nav>
 	<a href="/">Home</a>
 </nav>
@@ -8,6 +12,6 @@
 	}
 
 	a:hover {
-		color: white;
+		color: var(--purple);
 	}
 </style>

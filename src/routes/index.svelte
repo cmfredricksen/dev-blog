@@ -37,4 +37,8 @@
 		width: 100vw;
 		height: 3rem;
 	}
+
+	a {
+		font-size: small;
+	}
 </style>
