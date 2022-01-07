@@ -6,6 +6,7 @@ export const get = async (request) => {
 
 	const post = await res.json();
 	post.image = post._embedded['wp:featuredmedia'][0].source_url;
+	post.author = post._embedded['author'][0].name;
 
 	return {
 		status: 200,

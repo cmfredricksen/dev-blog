@@ -19,6 +19,8 @@
 
 <div class="post-container">
 	<h2>{@html post.title.rendered}</h2>
+	<p>Written by {@html post.author}</p>
+	<p>Published on {@html post.date}</p>
 
 	{#if post.image}
 		<img src={post.image} alt={post.title.rendered} />
